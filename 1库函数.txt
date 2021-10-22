@@ -1,0 +1,16 @@
+void qsort (void* base,             //被修改的数组首地址
+ 	size_t num,	//元素个数
+ 	size_t size,	//数组中每个元素的大小（字节）
+                 int (*compar)(const void* a,const void* b));	//用来比较待排序数据中两个元素的函数
+                   		（a.b分别为前一个元素地址和后一个元素地址）
+		可升序可降序   ：      升序（*a<*b,返回负数）
+				降序（*a<*b,返回正数）
+上函数可以排序多种类型的数据
+
+
+
+char*gets（char* str）//从标准输入（stdin）中读取字符，并将其作为C字符串存储到str中，直到到达换行符或文件结尾。
+
+perror 		 // 打印错误信息
+
+strerror		//翻译错误信息
